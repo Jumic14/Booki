@@ -1,0 +1,47 @@
+/* Définition Body */
+
+body {
+   max-width: 1400px;
+   font-family: "Raleway";
+   margin: 0 auto;
+   padding: 0 auto;
+ }
+
+/* Défintion Header */
+
+header {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 20px 50px;
+ }
+
+#logo {
+   height: 19px;
+}
+
+nav {
+   width: 381px;
+   height: 19px;
+   display: flex;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19px;
+   text-align: center;
+   justify-content: space-between;
+}
+
+nav a {
+   text-decoration: none;
+}
+
+nav a:hover {
+   font-weight: 500;
+   color: #0065fc;
+   border-top: 2px solid #0065fc;
+}
+
+nav a:visited {
+   color: black;
+}
