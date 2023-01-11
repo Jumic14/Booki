@@ -1,10 +1,12 @@
-/* Définition Body */
+   /** Version Desktop **/
 
-body {
+ /* Définition globale */
+
+* {
    max-width: 1400px;
    font-family: "Raleway";
-   margin: 0 auto;
-   padding: 0 auto;
+   margin: 0px 0px;
+   padding: 0px 0px;
  }
 
 /* Défintion Header */
@@ -13,35 +15,79 @@ header {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
-   padding: 20px 50px;
+   align-items: center;
+   height: 70px;
+   line-height: 68px;
+   font-weight: 400;
+   font-size: 16px;
+   color: black;
+   margin: 0px 0px;
+   padding: 0px 70px;
  }
 
 #logo {
+   width: 61px;
    height: 19px;
 }
 
 nav {
-   width: 381px;
-   height: 19px;
+   width: 25%;
    display: flex;
    font-style: normal;
-   font-weight: 400;
-   font-size: 16px;
-   line-height: 19px;
    text-align: center;
    justify-content: space-between;
 }
 
-nav a {
+.lien-nav {
+   width: 45%;
    text-decoration: none;
+   color: black;
 }
 
-nav a:hover {
+.lien-nav:hover {
    font-weight: 500;
    color: #0065fc;
    border-top: 2px solid #0065fc;
 }
 
-nav a:visited {
-   color: black;
+
+   /** Version Mobile **/
+@media screen and (max-width: 768px) {
+
+/* Défintion Header */
+   header {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0px 0px;
+      padding: 30px 0px;
+   }
+
+   nav {
+      width: 100%;
+   }
+
+   .lien-nav {
+      width: 50%;
+   }
+
+   .lien-nav:hover {
+      border-top: 0px;
+      border-bottom: 3px solid #0065fc;
+   }
+}
+
+
+
+   /** Version Tablette **/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+/* Défintion Header */
+   header {
+      padding-right: 30px;
+   }
+
+   nav {
+      width: 35%;
+   }
 }
