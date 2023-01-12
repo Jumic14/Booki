@@ -1,15 +1,21 @@
-   /** Version Desktop **/
+/** Version Desktop **/
 
- /* Définition globale */
+   /* Définition globale */
 
 * {
+   font-family: 'Raleway';
+   color: black;
+}
+
+   /* Définition Body*/
+
+body {
    max-width: 1400px;
-   font-family: "Raleway";
    margin: 0px 0px;
-   padding: 0px 0px;
+   padding: 0px 70px;
  }
 
-/* Défintion Header */
+   /* Défintion Header */
 
 header {
    display: flex;
@@ -20,9 +26,7 @@ header {
    line-height: 68px;
    font-weight: 400;
    font-size: 16px;
-   color: black;
-   margin: 0px 0px;
-   padding: 0px 70px;
+   margin-bottom: 20px;
  }
 
 #logo {
@@ -50,17 +54,111 @@ nav {
    border-top: 2px solid #0065fc;
 }
 
+   /* Défintion Main */
 
-   /** Version Mobile **/
+      /*Définition section recherche */
+
+h1 {
+   font-size: 22px;
+   font-weight: 700;
+   margin: 0px 0px;
+   font-weight: bold;
+}
+
+.texte-recherche p {
+   margin-top: 13px;
+   margin-bottom: 20px;
+}
+
+.fonction-recherche {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   width: 33%;
+   height: 49px;
+}
+
+#localisation {
+   width: 67%;
+   height: 100%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   border: 1px solid #f2f2f2;
+   border-right: none;
+   border-radius: 15px 0px 0px 15px;
+   opacity: 1;
+   font-weight: bold;
+}
+
+.fa-location-dot {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 15%;
+   height: 100%;
+   background-color: #f2f2f2;
+   border: 1px solid #f2f2f2;
+   border-radius: 15px 0px 0px 15px;
+}
+
+.ville {
+   font-size: 18px;
+   font-weight: bold;
+   width: 85%;
+   height: 100%;
+   border: none;
+   padding: 0px 10px;
+}
+
+::placeholder {
+   color: black;
+}
+
+.ville::placeholder{
+   opacity: 1;
+}
+
+.ville:focus {
+   outline: none;
+}
+
+.rechercher {
+   font-size: 18px;
+   font-weight: 700;
+   width: 35%;
+   height: 100%;
+   color:white;
+   border: 1px solid #0065FC;
+   border-radius: 0px 15px 15px 0px;
+   background-color: #0065FC;
+}
+
+.fa-magnifying-glass{
+   display:none;
+}
+
+/** Version Mobile **/
+
 @media screen and (max-width: 768px) {
 
-/* Défintion Header */
+   /* Définition Body */
+
+   body {
+      margin: 0px 0px;
+      padding: 0px 0px;
+    }
+
+   /* Défintion Header */
+
    header {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      margin: 0px 0px;
-      padding: 30px 0px;
+      gap: 10px;
+      margin: 30px 0px;
+      padding: 0px 0px;
    }
 
    nav {
@@ -75,14 +173,55 @@ nav {
       border-top: 0px;
       border-bottom: 3px solid #0065fc;
    }
+
+   /* Définition main */
+
+   main {
+      margin: 0px 0px;
+      padding: 0px 20px;
+   }
+
+   /* Définition section recherche */
+
+   .texte-recherche p {
+      margin-bottom: 36px;
+   }
+   
+   .fonction-recherche {
+      width: 100%;
+      padding: 0px 0px;
+   }
+
+   .rechercher {
+      display: none;
+   }
+   
+   .fa-magnifying-glass {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: 700;
+      width: 15%;
+      height: 100%;
+      color:white;
+      border: 1px solid #0065FC;
+      border-radius: 0px 15px 15px 0px;
+      background-color: #0065FC;
+   }
+
+   #localisation {
+      width: 85%;
+   }
 }
 
 
+/** Version Tablette **/
 
-   /** Version Tablette **/
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
-/* Défintion Header */
+   /* Défintion Header */
+
    header {
       padding-right: 30px;
    }
@@ -90,4 +229,12 @@ nav {
    nav {
       width: 35%;
    }
+
+   /* Définition section recherche */
+   
+   .fonction-recherche {
+      width: 60%;
+   }
+
 }
+

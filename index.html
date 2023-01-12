@@ -4,11 +4,12 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
+    <script src="https://kit.fontawesome.com/b85df69c82.js" crossorigin="anonymous"></script>
     <title>Booki</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -19,7 +20,26 @@
             <a href="" class="lien-nav">Activités</a>
         </nav>
     </header>
+    
 
+    <main>
+        <section class="recherche">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <div class="texte-recherche">
+                <p>En plein centre-ville ou en pleine nature</p>
+            </div>
+            <div class="fonction-recherche">
+                <div id="localisation">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <form method="get" action="">
+                        <input type="text" placeholder="Marseille, France" class ="ville">
+                    </form>
+                </div>
+                <input type="submit" value="Rechercher" class="rechercher">
+                <input type="image" value=""><i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
