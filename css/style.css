@@ -74,15 +74,9 @@ h1 {
    flex-direction: row;
    align-items: center;
    height: 49px;
-   padding: 10px 0px;
-}
-
-#localisation {
-   height: 100%;
    width: 45%;
-   display: flex;
-   flex-direction: row;
-   align-items: center;
+   padding: 0px 0px;
+   margin: 10px 0px;
    border: 1px solid #f2f2f2;
    border-right: none;
    border-radius: 15px;
@@ -95,7 +89,7 @@ form {
    flex-direction: row;
 }
 
-#localisation i {
+.fonction-recherche i {
    display: flex;
    align-items: center;
    justify-content: center;
@@ -138,7 +132,7 @@ form {
    padding: 2%;
 }
 
-#localisation .fa-magnifying-glass {
+.fonction-recherche .fa-magnifying-glass {
    display:none;
 }
 
@@ -483,7 +477,7 @@ body {
 
    /* Définition Nav */
 
-#localisation {
+.fonction-recherche {
    width: 50%;
 }
 
@@ -642,7 +636,6 @@ nav {
 
 .fonction-recherche {
    width: 100%;
-   padding: 15px 0px;
    display: flex;
    justify-content: center;
 }
@@ -651,7 +644,7 @@ nav {
    display: none;
 }
 
-#localisation .fa-magnifying-glass {
+.fonction-recherche .fa-magnifying-glass {
    display: flex;
    align-items: center;
    justify-content: center;
@@ -665,9 +658,6 @@ nav {
    background-color: #0065FC;
 }
 
-#localisation {
-   width: 100%;
-}
 
 form {
    width: 100%;
