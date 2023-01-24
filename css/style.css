@@ -9,6 +9,9 @@
 }
 
    /* Définition Body*/
+html, body {
+   overflow-x: hidden;
+}
 
 body {
    margin: 0px 0px;
@@ -684,7 +687,7 @@ ul {
 
 nav li {
    width: 47%;
-   font-size: 11px;
+   font-size: 9px;
    justify-content: stretch;
    margin: 0px 0px;
 } 
