@@ -1,4 +1,4 @@
-               /** Version Desktop **/
+               /* Version Desktop */
 
    /* Définition globale */
 
@@ -218,6 +218,13 @@ nav li:hover {
 
 .conteneur-hebergements h2 {
    margin: 0px 0px 10px 0px;
+}
+
+.titre-carte {
+   font-size: 22px;
+   font-weight: 700;
+   margin: 10px 0px;
+   font-weight: bold;
 }
 
    /* Définition Conteneur - Hébergements */
@@ -460,7 +467,7 @@ footer li {
    font-weight: 400;
 }
 
-               /** Version Tablette **/
+               /* Version Tablette */
 
 @media screen and (max-width: 992px) {
 
@@ -583,7 +590,7 @@ footer ul {
 
 }
 
-               /** Version Mobile **/
+               /* Version Mobile */
 
 @media screen and (max-width: 768px) {
 
@@ -763,7 +770,7 @@ article .description-carte {
    padding: 60px 0px;
 }
 
-.conteneur-activites h1 {
+.conteneur-activites .titre-carte {
    max-width: 150px;
    padding: 0px 5%;
    margin: 0px 0px   
